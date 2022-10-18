@@ -1,21 +1,21 @@
-
-//https://docs.etherscan.io
 const songs = require('./songlist.json')
 
-import { useEffect } from "react"
-import Web3 from "web3"
+// songs contains an array of objects, each with a title, artist, duration in seconds. Refer to README for more details.
 
-const valueToEther = (value) => {
-  return Web3.utils.fromWei(value, "ether")
-}
-
-console.log(songs)
+/*
+{
+    "title": "#40",
+    "artist": "Dave Matthews",
+    "duration": 35
+}, 
+*/
 
 export default function Home() {
   return (
     <div >
       <button>
-        TODO: implement music player    </button>
+        TODO: implement music player  
+      </button>
     </div>
   )
 }
